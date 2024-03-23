@@ -4,6 +4,7 @@ let timer = setInterval(timerFunction, 1000),
   per = 0;
 const timerBlock = document.querySelector(".timer");
 const timerMask = document.querySelector(".timer-mask");
+const preloader = document.getElementById("preloader");
 
 function timerFunction() {
   per += procent;
@@ -22,3 +23,8 @@ function timerFunction() {
   
   if (minute == 1) clearInterval(timer);
 }
+
+setTimeout(function(){
+    preloader.remove();
+    timerMask.style.display = "flex";
+}, 1000);

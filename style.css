@@ -1,4 +1,4 @@
-body {
+  body { 
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -19,7 +19,7 @@ body {
   .timer-mask {
     width: 200px;
     height: 200px;
-   // box-shadow: 0 0 15px 4px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, .4);
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -28,4 +28,9 @@ body {
    margin-left: -220px;
    font-size: 48px;
 }
-  
+  #preloader {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+  }
